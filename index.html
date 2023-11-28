@@ -6,14 +6,17 @@
         <div class="container">
             <h1>Color Scheme Generator</h1>
                 <div class="flex" style="justify-content: space-between; margin-bottom: 2rem">
-                    <input class="color-picker" type="color">
-                    <select class="color-dropdown">
-                        <option value="#FFFFFF">Monochrome</option>
-                        <option value="#2196F3">Blue</option>
-                        <option value="#4CAF50">Green</option>
-                        <option value="#F44336">Red</option>
+                    <input id="color-picker" class="color-picker" type="color">
+                    <select id="color-dropdown" class="color-dropdown">
+                        <option>Monochrome</option>
+                        <option>Monochrome-Dark</option>
+                        <option>Monochrome-Light</option>
+                        <option>Analogic</option>
+                        <option>Complement</option>
+                        <option>Analogic-Complement</option>
+                        <option>Triad</option>
                       </select>
-                    <button style="padding: 1rem;">Get color scheme</button>
+                    <button id="get-scheme" style="padding: 1rem;">Get color scheme</button>
                 </div>
             <section id="colors">
               <div class="grid">
