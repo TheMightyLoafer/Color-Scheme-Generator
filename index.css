@@ -95,6 +95,8 @@ select {
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
+    flex-grow: 1;
+    place-items: center;
 }
 
 .grid {
@@ -189,3 +191,14 @@ select {
 .color5 {
     grid-column: 5 / -1;
 }
+
+.color-dropdown {
+    padding: 1rem 20rem 1.25rem 0;
+}
+
+.color-picker {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+}
+
