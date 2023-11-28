@@ -154,43 +154,10 @@ select {
     line-height: 1.1;
 }
 
-.numbered-title {
-    font-family: var(--ff-sans-cond);
-    font-size: var(--fs-500);
-    text-transform: uppercase;
-    letter-spacing: 4.72px; 
-}
-
-.numbered-title span {
-    margin-right: .5em;
-    font-weight: 700;
-    color: hsl( var(--clr-white) / .25);
-}
-
 
 /* ------------------- */
 /* Compontents         */
 /* ------------------- */
-
-.color1 {
-    grid-column: 1 / -1;
-}
-
-.color2 {
-    grid-column: 2 / -1;
-}
-
-.color3 {
-    grid-column: 3 / -1;
-}
-
-.color4 {
-    grid-column: 4 / -1;
-}
-
-.color5 {
-    grid-column: 5 / -1;
-}
 
 .color-dropdown {
     padding: 1rem 20rem 1.25rem 0;
