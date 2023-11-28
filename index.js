@@ -12,7 +12,7 @@ requestSchemeBtn.addEventListener('click', () => {
         mode: selectSchemeEl,
     });
 
-    const url = `${colorAPI}?${params}`;
+    const url = `${colorAPI}?${params}&count=5`;
 
     console.log(url);
     console.log(colorPickerEl.value);
