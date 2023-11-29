@@ -1,4 +1,3 @@
-
 const requestSchemeBtn = document.getElementById("get-scheme");
 
 requestSchemeBtn.addEventListener('click', () => {
@@ -10,17 +9,21 @@ requestSchemeBtn.addEventListener('click', () => {
     colorPickerEl = colorPickerEl.replace('#', '')
 
     const url = `https://www.thecolorapi.com/scheme?hex=${colorPickerEl}&format=json&mode=${selectSchemeEl}&count=5`;
-    
+
     console.log(url)
     fetch(url)
         .then(res => res.json())
         .then(data => {
             console.log(data)
             colorCards.innerHTML = ""
-            for(const color of data.colors){
+            for (const color of data) {
                 colorCards.innerHTML += `
-                <div style="padding: 3rem 1rem 1rem; background-color: ${color.hex.value};"
+                <div style="padding: 3rem 1rem 1rem; background-color: ${color.colors.hex.value};"
                 </div>`
             }
+        })
+        .catch(error => {
+            console.error(error);
+            alert("There was an error fetching the color scheme. Please try again later.");
         });
 });
