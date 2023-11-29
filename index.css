@@ -173,7 +173,8 @@ select {
     transition: filter 0.2s ease-in-out;
   }
   
-  .color-column:hover {
+  .color-column:hover,
+  .color-column:focus {
     filter: brightness(90%);
     cursor: pointer;
   }
