@@ -73,7 +73,7 @@ body {
 
 /* make images easier to work with */
 img,
-picutre {
+picture {
     max-width: 100%;
     display: block;
 }
@@ -118,13 +118,13 @@ select {
 
 /* colors */
 
-.bg-dark { background-color: hsl( var(--clr-dark) );}
-.bg-accent { background-color: hsl( var(--clr-light) );}
-.bg-white { background-color: hsl( var(--clr-white) );}
-
-.text-dark { color: hsl( var(--clr-dark) );}
-.text-accent { color: hsl( var(--clr-light) );}
-.text-white { color: hsl( var(--clr-white) );}
+.inverse-text {
+    background-color: #000;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+  
 
 /* typography */
 
@@ -156,7 +156,7 @@ select {
 
 
 /* ------------------- */
-/* Compontents         */
+/* Components         */
 /* ------------------- */
 
 .color-dropdown {
@@ -168,4 +168,13 @@ select {
     height: 5rem;
     flex-shrink: 0;
 }
+
+.color-column {
+    transition: filter 0.2s ease-in-out;
+  }
+  
+  .color-column:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+  }
 

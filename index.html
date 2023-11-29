@@ -1,50 +1,33 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Color Scheme Generator</h1>
-                <div class="flex" style="justify-content: space-between; margin-bottom: 2rem">
-                    <input id="color-picker" class="color-picker" type="color">
-                    <select id="color-dropdown" class="color-dropdown">
-                        <option>Monochrome</option>
-                        <option>Monochrome-Dark</option>
-                        <option>Monochrome-Light</option>
-                        <option>Analogic</option>
-                        <option>Complement</option>
-                        <option>Analogic-Complement</option>
-                        <option>Triad</option>
-                      </select>
-                    <button id="get-scheme" style="padding: 1rem;">Get color scheme</button>
-                </div>
-            <section id="colors">
-              <div id="color-cards" class="grid">
-                <div id="col1" class="bg-white text-dark color-column" style="padding: 3rem 1rem 1rem;">
-                    #FFFFFF
-                </div>
-          
-                <div id="col2" class="bg-white text-dark color-column" style="padding: 3rem 1rem 1rem;">
-                  #FFFFFF
-                </div>
-                
-                <div id="col3" class="bg-white text-dark color-column" style="padding: 3rem 1rem 1rem;">
-                    #FFFFFF
-                  
-                </div>
-          
-                <div id="col4" class="bg-white text-dark color-column" style="padding: 3rem 1rem 1rem;">
-                    #FFFFFF
-                  
-                </div>
-          
-                <div id="col5" class="bg-white text-dark color-column" style="padding: 3rem 1rem 1rem;">
-                    #FFFFFF
-                  
-                </div>
-              </div>
-            </section>
-          </div>
-        <script src="index.js"></script>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Color Scheme Generator</h1>
+        <div class="flex" style="justify-content: space-between; margin-bottom: 2rem">
+            <input id="color-picker" class="color-picker" type="color">
+            <select id="color-dropdown" class="color-dropdown">
+                <option>Monochrome</option>
+                <option>Monochrome-Dark</option>
+                <option>Monochrome-Light</option>
+                <option>Analogic</option>
+                <option>Complement</option>
+                <option>Analogic-Complement</option>
+                <option>Triad</option>
+            </select>
+            <button id="get-scheme" style="padding: 1rem;">Get color scheme</button>
+        </div>
+        <section id="colors">
+            <div id="color-cards" class="grid">
+                <h2 style="grid-column: 1 / 4">Welcome! Choose a Seed color and Scheme to get started...</h1>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
