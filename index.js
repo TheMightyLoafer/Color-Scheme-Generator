@@ -3,7 +3,6 @@ const storedPermission = localStorage.getItem('clipboard-write-permission');
 if (storedPermission !== null) {
   // Use the stored permission preference
   if (storedPermission === 'granted') {
-    addClickToCopyFunctionality();
   } else if (storedPermission === 'denied') {
     console.error('Clipboard write permission denied');
   }
@@ -12,7 +11,6 @@ if (storedPermission !== null) {
   navigator.permissions.query({ name: 'clipboard-write' }).then(result => {
     if (result.state === 'granted') {
       // Proceed with setting up click-to-copy functionality
-      addClickToCopyFunctionality();
 
       // Store the granted permission in local storage
       localStorage.setItem('clipboard-write-permission', 'granted');
@@ -28,7 +26,6 @@ if (storedPermission !== null) {
       // Check for permission again after granting and set up click-to-copy functionality if granted
       navigator.permissions.query({ name: 'clipboard-write' }).then(secondResult => {
         if (secondResult.state === 'granted') {
-          addClickToCopyFunctionality();
           document.body.removeChild(warningMessage);
 
           // Store the granted permission in local storage
